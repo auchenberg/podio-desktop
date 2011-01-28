@@ -53,9 +53,8 @@ class TrayApplication
         count = Podio::UserStatus.current['inbox_new']
         @app.menu_items.first.set_label "Go to Inbox (#{count})"
         icon = @app.tray.trayIcons.first
-        puts icon.class.instance_methods(false)
 	    if count > 0
-            icon.setToolTip("Podio \n#{count} unread messages")
+        icon.setToolTip("Podio \n#{count} unread messages")
 		    icon.set_image(java.awt.Toolkit::default_toolkit.get_image('logo_unread.png'))
 	    else
 		    icon.setToolTip('No unread messages')
@@ -87,8 +86,6 @@ class TrayApplication
 
     thread0 = JavaLang::Thread.new(ThreadImpl.new(self)).start
 
-    icon = java.awt.TrayIcon::MessageType::INFO
-    puts icon
     tray_icon.setToolTip('Podio')
   end
 
