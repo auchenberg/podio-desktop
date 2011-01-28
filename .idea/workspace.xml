@@ -36,19 +36,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="21" selection-start="35" selection-end="50" vertical-scroll-proportion="0.0">
+            <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.026352288">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tray_application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tray_application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tray_application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="25" selection-start="272" selection-end="272" vertical-scroll-proportion="0.36842105">
+            <state line="24" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="-6.3018866">
               <folding />
             </state>
           </provider>
@@ -66,7 +66,9 @@
       <list>
         <option value="$PROJECT_DIR$/ex1_button/ex1_button.rb" />
         <option value="$PROJECT_DIR$/test.rb" />
+        <option value="$PROJECT_DIR$/screenshot.rb" />
         <option value="$PROJECT_DIR$/tray_application.rb" />
+        <option value="$PROJECT_DIR$/app.rb" />
       </list>
     </option>
   </component>
@@ -224,16 +226,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
+    <entry file="file://$PROJECT_DIR$/tray_application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="35" selection-end="50" vertical-scroll-proportion="0.0">
+        <state line="24" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="-6.3018866">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tray_application.rb">
+    <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="272" selection-end="272" vertical-scroll-proportion="0.36842105">
+        <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.026352288">
           <folding />
         </state>
       </provider>

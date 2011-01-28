@@ -1,6 +1,7 @@
 class TrayApplication
 
   include Java
+  import java.awt.Desktop # added Desktop to import
   import java.awt.TrayIcon
   import java.awt.Toolkit
 
@@ -31,5 +32,11 @@ class TrayApplication
     tray = java.awt.SystemTray::system_tray
     tray.add(tray_icon)
   end
+
+  def browse(url)
+    uri  = java::net::URI.new(url)
+    desktop = Desktop.get_desktop
+    desktop.browse(uri)
+  end  
 
 end
