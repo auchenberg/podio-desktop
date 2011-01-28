@@ -5,25 +5,10 @@ require 'growl'
 require 'tray_application'
 require 'yaml'
 
-api_config = YAML::load(File.open('api_config.yml'))
-
-Podio.configure do |config|
-  config.api_key = api_config['api_key']
-  config.api_secret = api_config['api_secret']
-  config.debug = true
-end
-
-Podio.client = Podio::Client.new
-Podio.client.get_access_token(api_config['login'], api_config['password'])
-
 app = TrayApplication.new("Podio")
-inbox_count = app.inbox_count
-if app.inbox_count > 0
-	app.icon_filename = 'logo_unread.png'
-else
-	app.icon_filename = 'logo.png'
-end
-app.item("Go to Inbox (#{inbox_count})")  {app.browse('https://podio.com/inbox')}
+
+app.icon_filename = 'logo.png'
+app.item("Go to Inbox (Loading)")  {app.browse('https://podio.com/inbox')}
 app.item('Go to Stream')  {app.browse('https://podio.com/stream')}
 app.item('Exit')  {java.lang.System::exit(0)}
 

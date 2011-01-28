@@ -9,6 +9,7 @@ class TrayApplication
     include_package "java.lang"      # we don't want to clash with Ruby Thread?
   end
 
+  API_CONFIG = YAML::load(File.open('api_config.yml'))
 
   attr_accessor :icon_filename
   attr_accessor :menu_items
@@ -24,33 +25,39 @@ class TrayApplication
     @menu_items << item
   end
 
-  def inbox_count
-    Podio::UserStatus.current['inbox_new']
-  end
-
-  class MySwingWorker < javax.swing.SwingWorker
-    def doInBackground
-      puts "thread #{self.hashCode} working"
-      sleep(1)
-    end
-  end
-
   class ThreadImpl
     include JavaLang::Runnable       # include interface as a 'module'
   
     attr_reader :runner   # instance variables
-  
-    def initialize
+
+    def initialize(app)
       @runner = JavaLang::Thread.current_thread # get access to main thread
-      puts "...in thread #{JavaLang::Thread.current_thread.get_name}"
+      @app = app
     end
   
     def run
       while true
-        puts "...in thread #{JavaLang::Thread.current_thread.get_name}"
+        api_config = API_CONFIG
+
+        Podio.configure do |config|
+          config.api_key = api_config['api_key']
+          config.api_secret = api_config['api_secret']
+          config.debug = false
+        end
+
+        Podio.client = Podio::Client.new
+
+        Podio.client.get_access_token(api_config['login'], api_config['password'])
+
+        count = Podio::UserStatus.current['inbox_new']
+        @app.menu_items.first.set_label "Go to Inbox (#{count})"
         sleep 10
       end
     end
+  end
+
+  def menu_items
+    @menu_items
   end
 
   def run
@@ -66,7 +73,7 @@ class TrayApplication
     tray = java.awt.SystemTray::system_tray
     tray.add(tray_icon)
 
-    thread0 = JavaLang::Thread.new(ThreadImpl.new).start
+    thread0 = JavaLang::Thread.new(ThreadImpl.new(self)).start
 
     icon = java.awt.TrayIcon::MessageType::INFO
 
