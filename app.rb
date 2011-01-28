@@ -18,8 +18,11 @@ Podio.client.get_access_token(api_config['login'], api_config['password'])
 
 app = TrayApplication.new("Podio")
 inbox_count = app.inbox_count
-
-app.icon_filename = 'logo.png'
+if app.inbox_count > 0
+	app.icon_filename = 'logo_unread.png'
+else
+	app.icon_filename = 'logo.png'
+end
 app.item("Go to Inbox (#{inbox_count})")  {app.browse('https://podio.com/inbox')}
 app.item('Go to Stream')  {app.browse('https://podio.com/stream')}
 app.item('Exit')  {java.lang.System::exit(0)}
