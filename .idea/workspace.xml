@@ -27,19 +27,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="68" selection-start="277" selection-end="277" vertical-scroll-proportion="0.2108183">
+            <state line="5" column="0" selection-start="108" selection-end="108" vertical-scroll-proportion="-3.5185184">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="growl.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="growl.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/growl.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="16" selection-start="501" selection-end="501" vertical-scroll-proportion="-19.0">
+            <state line="10" column="45" selection-start="185" selection-end="185" vertical-scroll-proportion="0.2635229">
               <folding />
             </state>
           </provider>
@@ -255,16 +255,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/growl.rb">
+    <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="16" selection-start="501" selection-end="501" vertical-scroll-proportion="-19.0">
+        <state line="5" column="0" selection-start="108" selection-end="108" vertical-scroll-proportion="-3.5185184">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
+    <entry file="file://$PROJECT_DIR$/growl.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="68" selection-start="277" selection-end="277" vertical-scroll-proportion="0.2108183">
+        <state line="10" column="45" selection-start="185" selection-end="185" vertical-scroll-proportion="0.2635229">
           <folding />
         </state>
       </provider>
