@@ -19,6 +19,10 @@ class TrayApplication
     @menu_items << item
   end
 
+  def inbox_count
+    Podio::UserStatus.current['inbox_new']
+  end
+
   def run
     popup = java.awt.PopupMenu.new
     @menu_items.each{|i| popup.add(i)}

@@ -1,0 +1,5 @@
+api_key: CLIENT_ID
+api_secret: CLIENT_SECRET
+
+login: YOUR_LOGIN_EMAIL
+password: YOUR_PASSWORD
