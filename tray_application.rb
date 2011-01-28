@@ -55,7 +55,7 @@ class TrayApplication
         icon = @app.tray.trayIcons.first
         puts icon.class.instance_methods(false)
 	    if count > 0
-            icon.setToolTip("#{count} unread messages")
+            icon.setToolTip("Podio \n#{count} unread messages")
 		    icon.set_image(java.awt.Toolkit::default_toolkit.get_image('logo_unread.png'))
 	    else
 		    icon.setToolTip('No unread messages')
