@@ -36,6 +36,7 @@ class TrayApplication
     #icon = java.awt.TrayIcon::MessageType::Info.new
 
     #tray_icon.displayMessage('test', 'test', icon)
+
   end
 
   def browse(url)
