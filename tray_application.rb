@@ -5,6 +5,11 @@ class TrayApplication
   import java.awt.TrayIcon
   import java.awt.Toolkit
 
+  module JavaLang                    # create a namespace for java.lang
+    include_package "java.lang"      # we don't want to clash with Ruby Thread?
+  end
+
+
   attr_accessor :icon_filename
   attr_accessor :menu_items
 
@@ -23,6 +28,31 @@ class TrayApplication
     Podio::UserStatus.current['inbox_new']
   end
 
+  class MySwingWorker < javax.swing.SwingWorker
+    def doInBackground
+      puts "thread #{self.hashCode} working"
+      sleep(1)
+    end
+  end
+
+  class ThreadImpl
+    include JavaLang::Runnable       # include interface as a 'module'
+  
+    attr_reader :runner   # instance variables
+  
+    def initialize
+      @runner = JavaLang::Thread.current_thread # get access to main thread
+      puts "...in thread #{JavaLang::Thread.current_thread.get_name}"
+    end
+  
+    def run
+      while true
+        puts "...in thread #{JavaLang::Thread.current_thread.get_name}"
+        sleep 10
+      end
+    end
+  end
+
   def run
     popup = java.awt.PopupMenu.new
     @menu_items.each{|i| popup.add(i)}
@@ -36,10 +66,11 @@ class TrayApplication
     tray = java.awt.SystemTray::system_tray
     tray.add(tray_icon)
 
-    icon = java.awt.TrayIcon::MessageType::INFO
-    
-    tray_icon.setToolTip('20 unread messages')
+    thread0 = JavaLang::Thread.new(ThreadImpl.new).start
 
+    icon = java.awt.TrayIcon::MessageType::INFO
+
+    tray_icon.setToolTip('20 unread messages')
   end
 
   def browse(url)
