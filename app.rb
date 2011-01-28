@@ -24,7 +24,7 @@ app.item("Go to Inbox (#{inbox_count})")  {app.browse('https://podio.com/inbox')
 app.item('Go to Stream')  {app.browse('https://podio.com/stream')}
 app.item('Exit')  {java.lang.System::exit(0)}
 
-Growl.g 'Welcome to Podio desktop'
+#Growl.g 'Welcome to Podio desktop'
 
 app.run
 
