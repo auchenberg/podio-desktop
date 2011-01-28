@@ -27,19 +27,28 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ex1_button.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ex1_button/ex1_button.rb">
+      <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="57" selection-start="320" selection-end="320" vertical-scroll-proportion="7.7777777">
+            <state line="8" column="68" selection-start="277" selection-end="277" vertical-scroll-proportion="0.2108183">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.rb">
+      <file leaf-file-name="growl.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/growl.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.0">
+            <state line="27" column="16" selection-start="501" selection-end="501" vertical-scroll-proportion="-19.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -52,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tray_application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tray_application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tray_application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="4" selection-start="906" selection-end="906" vertical-scroll-proportion="0.5856115">
+            <state line="40" column="17" selection-start="978" selection-end="978" vertical-scroll-proportion="-13.584906">
               <folding />
             </state>
           </provider>
@@ -74,8 +83,9 @@
         <option value="$PROJECT_DIR$/ex1_button/ex1_button.rb" />
         <option value="$PROJECT_DIR$/test.rb" />
         <option value="$PROJECT_DIR$/screenshot.rb" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/tray_application.rb" />
+        <option value="$PROJECT_DIR$/app.rb" />
+        <option value="$PROJECT_DIR$/growl.rb" />
       </list>
     </option>
   </component>
@@ -121,20 +131,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="podio-desktop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="podio-desktop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="podio-desktop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ex1_button" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -240,28 +236,35 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ex1_button/ex1_button.rb">
+    <entry file="file://$PROJECT_DIR$/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="57" selection-start="320" selection-end="320" vertical-scroll-proportion="7.7777777">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tray_application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="17" selection-start="978" selection-end="978" vertical-scroll-proportion="-13.584906">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/growl.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="16" selection-start="501" selection-end="501" vertical-scroll-proportion="-19.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tray_application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="906" selection-end="906" vertical-scroll-proportion="0.5856115">
+        <state line="8" column="68" selection-start="277" selection-end="277" vertical-scroll-proportion="0.2108183">
           <folding />
         </state>
       </provider>

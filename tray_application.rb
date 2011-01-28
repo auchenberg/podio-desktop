@@ -23,7 +23,6 @@ class TrayApplication
     popup = java.awt.PopupMenu.new
     @menu_items.each{|i| popup.add(i)}
 
-
     # Give the tray an icon and attach the popup menu to it
     image    = java.awt.Toolkit::default_toolkit.get_image(@icon_filename)
     tray_icon = TrayIcon.new(image, @name, popup)
