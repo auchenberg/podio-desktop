@@ -30,7 +30,7 @@
       <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="108" selection-end="108" vertical-scroll-proportion="-3.5185184">
+            <state line="11" column="11" selection-start="338" selection-end="338" vertical-scroll-proportion="-7.740741">
               <folding />
             </state>
           </provider>
@@ -39,7 +39,7 @@
       <file leaf-file-name="growl.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/growl.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="45" selection-start="185" selection-end="185" vertical-scroll-proportion="0.2635229">
+            <state line="31" column="0" selection-start="528" selection-end="528" vertical-scroll-proportion="0.81692094">
               <folding />
             </state>
           </provider>
@@ -84,8 +84,8 @@
         <option value="$PROJECT_DIR$/test.rb" />
         <option value="$PROJECT_DIR$/screenshot.rb" />
         <option value="$PROJECT_DIR$/tray_application.rb" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/growl.rb" />
+        <option value="$PROJECT_DIR$/app.rb" />
       </list>
     </option>
   </component>
@@ -257,14 +257,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="108" selection-end="108" vertical-scroll-proportion="-3.5185184">
+        <state line="11" column="11" selection-start="338" selection-end="338" vertical-scroll-proportion="-7.740741">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/growl.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="185" selection-end="185" vertical-scroll-proportion="0.2635229">
+        <state line="31" column="0" selection-start="528" selection-end="528" vertical-scroll-proportion="0.81692094">
           <folding />
         </state>
       </provider>
