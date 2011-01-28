@@ -37,8 +37,6 @@ class TrayApplication
     tray.add(tray_icon)
 
     icon = java.awt.TrayIcon::MessageType::INFO
-    
-    tray_icon.setToolTip('20 unread messages')
 
   end
 
