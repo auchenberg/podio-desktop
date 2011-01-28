@@ -13,6 +13,7 @@ class TrayApplication
 
   attr_accessor :icon_filename
   attr_accessor :menu_items
+  attr_accessor :tray
 
   def initialize(name = 'Tray Application')
     @menu_items = []
@@ -51,6 +52,16 @@ class TrayApplication
 
         count = Podio::UserStatus.current['inbox_new']
         @app.menu_items.first.set_label "Go to Inbox (#{count})"
+        icon = @app.tray.trayIcons.first
+        puts icon.class.instance_methods(false)
+	    if count > 0
+            icon.setToolTip("#{count} unread messages")
+		    icon.set_image(java.awt.Toolkit::default_toolkit.get_image('logo_unread.png'))
+	    else
+		    icon.setToolTip('No unread messages')
+            icon.set_image(java.awt.Toolkit::default_toolkit.get_image('logo.png'))
+		    #tray_icon = java.awt.Toolkit::default_toolkit.get_image('logo.png')    
+	    end
         sleep 10
       end
     end
@@ -59,25 +70,26 @@ class TrayApplication
   def menu_items
     @menu_items
   end
+  
 
   def run
     popup = java.awt.PopupMenu.new
     @menu_items.each{|i| popup.add(i)}
 
     # Give the tray an icon and attach the popup menu to it
-    image    = java.awt.Toolkit::default_toolkit.get_image(@icon_filename)
+    image = java.awt.Toolkit::default_toolkit.get_image(@icon_filename)
     tray_icon = TrayIcon.new(image, @name, popup)
     tray_icon.image_auto_size = true
 
     # Finally add the tray icon to the tray
-    tray = java.awt.SystemTray::system_tray
-    tray.add(tray_icon)
+    @tray = java.awt.SystemTray::system_tray
+    @tray.add(tray_icon)
 
     thread0 = JavaLang::Thread.new(ThreadImpl.new(self)).start
 
     icon = java.awt.TrayIcon::MessageType::INFO
-
-    tray_icon.setToolTip('20 unread messages')
+    puts icon
+    tray_icon.setToolTip('Podio')
   end
 
   def browse(url)
