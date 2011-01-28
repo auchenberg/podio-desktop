@@ -39,7 +39,7 @@
       <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.026352288">
+            <state line="8" column="18" selection-start="187" selection-end="187" vertical-scroll-proportion="0.2108183">
               <folding />
             </state>
           </provider>
@@ -48,7 +48,7 @@
       <file leaf-file-name="tray_application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tray_application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="-6.3018866">
+            <state line="6" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="-2.1509433">
               <folding />
             </state>
           </provider>
@@ -228,14 +228,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tray_application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="-6.3018866">
+        <state line="6" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="-2.1509433">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.026352288">
+        <state line="8" column="18" selection-start="187" selection-end="187" vertical-scroll-proportion="0.2108183">
           <folding />
         </state>
       </provider>
