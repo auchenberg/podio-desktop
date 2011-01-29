@@ -1,5 +1,8 @@
 class TrayApplication
-
+  require 'os_helper'
+  if OsHelper.is_osx?
+    require 'growl'
+  end
   include Java
   import java.awt.Desktop # added Desktop to import
   import java.awt.TrayIcon
@@ -56,12 +59,15 @@ class TrayApplication
 	    if count > 0
         icon.setToolTip("Podio \n#{count} unread messages")
 		    icon.set_image(java.awt.Toolkit::default_toolkit.get_image('logo_unread.png'))
+        if OsHelper.is_osx? #There must be a better pattern than this, right?
+          Growl.g "You have #{count} unread messages"
+        end
 	    else
 		    icon.setToolTip('No unread messages')
             icon.set_image(java.awt.Toolkit::default_toolkit.get_image('logo.png'))
 		    #tray_icon = java.awt.Toolkit::default_toolkit.get_image('logo.png')    
 	    end
-        sleep 10
+        sleep 30
       end
     end
   end
