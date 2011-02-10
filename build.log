@@ -1,0 +1,32 @@
+(in /home/nickbarnwell/Desktop/code/podio-desktop)
+Compile src/app.rb into package/classes/ruby/app.class
+   compile_dirs has src_dirs = ["src"]
+   glob_ruby_files has directory 'src' glob ["src/app.rb", "src/growl.rb", "src/os_helper.rb", "src/tray_application.rb"]
+files for src: 4
+   ruby_globs.each has glob_data = #<OpenStruct files=["app.rb", "growl.rb", "os_helper.rb", "tray_application.rb"], directory="src">
+    Go compile ["src/app.rb", "src/growl.rb", "src/os_helper.rb", "src/tray_application.rb"]
+Compiling src/app.rb to class app
+Compiling src/growl.rb to class growl
+Compiling src/os_helper.rb to class os_helper
+Compiling src/tray_application.rb to class tray_application
+Copying non-source file src/api_config.yml to package/classes/ruby/api_config.yml
+=== Creating jar file: package/jar/podio-desktop.jar
+Creating Windows application in package/jar/podio-desktop.exe
+launch4j: Compiling resources
+launch4j: Generated resource file...
+
+launch4j: LANGUAGE 0, 1
+2 RCDATA BEGIN "1.6.0\0" END
+18 RCDATA BEGIN "1\0" END
+12 RCDATA BEGIN " \0" END
+1 ICON DISCARDABLE "/home/nickbarnwell/Desktop/code/podio-desktop/package/windows/img/logo.png"
+21 RCDATA BEGIN "http://java.com/download\0" END
+20 RCDATA BEGIN "32\0" END
+9 RCDATA BEGIN "true\0" END
+101 RCDATA BEGIN "There was an error starting the application.\0" END
+102 RCDATA BEGIN "There was an error with the bundled JRE for this app.\0" END
+103 RCDATA BEGIN "This application requires a newer version of Java. Please visit http://www.java.com\0" END
+104 RCDATA BEGIN "There was an error launching the application.\0" END
+14 RCDATA BEGIN "podio-desktop.jar\0" END
+
+launch4j: net.sf.launch4j.ExecException: java.io.IOException: Cannot run program "/home/nickbarnwell/.rvm/gems/jruby-1.5.6/gems/rawr-1.4.5/lib/launch4j/bin/windres": java.io.IOException: error=2, No such file or directory
